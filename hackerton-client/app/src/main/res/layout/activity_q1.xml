@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".q1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="당신은 오늘 몇시에 취침했습니까?"
+            android:textSize="25dp" />
+
+        <RadioGroup
+            android:id="@+id/sleepRadio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/sleepRadio1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="오후 3시 ~ 5시" />
+
+            <RadioButton
+                android:id="@+id/sleepRadio2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="오전 12시 ~ 1시" />
+
+            <RadioButton
+                android:id="@+id/sleepRadio3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="오전 1시 ~ 2시" />
+
+            <RadioButton
+                android:id="@+id/sleepRadio4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="오전 2시 ~ 3시" />
+
+            <RadioButton
+                android:id="@+id/sleepRadio5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="오전 3시 ~ 4시" />
+
+            <RadioButton
+                android:id="@+id/sleepRadio6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="오전 4시 ~ 오후 3시" />
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="그외" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="당신은 오늘 몇시에 기상했습니까?"
+            android:textSize="25dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <EditText
+                android:id="@+id/time"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="시" />
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/sun"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="오전" />
+
+                <RadioButton
+                    android:id="@+id/night"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="오후" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="당신은 수면하면서 자주 깨었나요?"
+            android:textSize="25dp" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/psleepy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="예" />
+
+            <RadioButton
+                android:id="@+id/psleepn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="아니요" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/sleepinsert"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="다음" />
+    </LinearLayout>
+</ScrollView>
