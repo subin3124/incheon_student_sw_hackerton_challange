@@ -9,7 +9,7 @@ public class ScoreDBA {
     Statement st;
     ResultSet rs;
     public ScoreDBA() throws SQLException {
-        conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/hackerton?serverTimezone=UTC","root","kim1160");
+        conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/hackerton?serverTimezone=UTC","root","비번");
 
     }
     public void InsertResult(String id, ScoreResult sr) throws SQLException {
