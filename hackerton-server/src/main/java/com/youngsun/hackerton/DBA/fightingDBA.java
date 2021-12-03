@@ -11,7 +11,7 @@ public class fightingDBA {
     Statement st;
     ResultSet rs;
     public fightingDBA() throws SQLException {
-        conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/hackerton?serverTimezone=UTC","root","kim1160");
+        conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/hackerton?serverTimezone=UTC","root","비번");
 
     }
     public void InsertFighting(fighting f) throws SQLException {
