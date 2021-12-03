@@ -7,7 +7,7 @@ public class loginDBA {
     Statement st;
     ResultSet rs;
     public loginDBA() throws SQLException {
-        conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/hackerton?serverTimezone=UTC","root","kim1160");
+        conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/hackerton?serverTimezone=UTC","root","비번");
 
     }
     public void login(String id, String pw) throws SQLException {
